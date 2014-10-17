@@ -1,0 +1,44 @@
+<p>
+  You jump in your car and make the drive to work.  You get in around the same time you normally do.  Mitchell's cube is empty when you walk by&mdash;good.  Charles is already typing away at his desk.  You say hi as you walk to your cubical.
+</p>
+
+<p>
+  Carol, whose cube is opposite yours starts chatting, telling you about the latest funny thing her little boy did.  You're half listening.  But even half listening is enough distraction that you feel slightly less anxious.
+</p>
+
+<p>
+  "Well, I'll let you get to work," she says, smiling.
+</p>
+
+<if any="charles-knows">
+  <true>
+    <p>
+      You enter your cubical and plop down in your chair.  There's a yellow sticky note stuck to your keyboard.  It reads:
+      <blockquote>Please see me ASAP.
+        <br/><br/>Tara</blockquote>
+    </p>
+
+    <p>
+      Panic grips you.  "Not today..." you mutter.  Then again, maybe you could tell Tara about what you found on Mitchell's computer.
+    </p>
+
+    <div class="prompt">What do you do?</div>
+
+    <choice goto="meet-with-tara" ifkey="charles-knows">Meet with Tara</choice>
+    <choice goto="leave-work" ifkey="charles-knows">Ignore the note and leave</choice>
+  </true>
+  <else>
+    <p>
+      You enter your cubical and plop down in your chair.
+
+      "What do I do?," you think. "I need to ask someone... but who can I trust?  Maybe Charles?  He's worked here a long time.  Would Carol know?  Or Mitchell?"
+    </p>
+
+    <div class="prompt">What do you do?</div>
+
+    <choice goto="ask-charles" ifnotkey="charles-knows">Ask Charles</choice>
+    <choice goto="ask-carol" ifnotkey="charles-knows">Ask Carol</choice>
+    <choice goto="ask-mitchell" ifnotkey="charles-knows">Ask Mitchell</choice>
+  </else>
+</if>
+

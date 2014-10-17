@@ -1,0 +1,50 @@
+<p>
+  Inside, you hold your wrist under a scanner until the red laser lines find the code and it beeps.  A guard reads from the back of the scanner, "KR51.  Follow me."
+  <if any="mitchell-plan">
+    <true>
+      You walk after him, turning around to say goodbye to Mitchell.  He lifts his head and mouths, "later."  Another guard reads Mitchell's scan, "KR49.  This way."  And he's led down a hallway to the right.
+    </true>
+    <else>
+      You walk after him, a little nervous.
+    </else>
+  </if>
+</p>
+
+<p>
+  Your guard leads you to a door, enters a code and pushes it open, revealing a very empty, windowless white room.  There's a tall metal stool in the middle, a door on the far side (you notice that there's no lock) and you can see the back of a man wearing a lab coat&mdash;he's doing something at a high table.  The guard indicates that you should enter and you do.  The door closes behind you.
+</p>
+
+<p>
+  The man in the lab coat turns, "Ah yes.  Hello.  Please sit.  Or stand if you prefer.  I'm almost ready."  He turns back to the table.  You sit down and look around.
+  <if any="mitchell-plan">
+    <true>
+      There are medical instruments on the table, and among them you notice a scapel.  <thought>That might work as a screwdriver.</thought>
+    </true>
+    <else>
+      There are medical instruments on the table and not much else.
+    </else>
+  </if>
+  "They said KR51, right?" the man asks.
+</p>
+
+<p>
+  "Right."  The man seems very friendly so you venture a question, "What are you doing to me?"
+</p>
+
+<p>
+  He turns back, with a syringe in his hand.  "Well, I'm going to give you this to keep it from progressing.  Have you noticed anything unusual this morning?"  He reaches for your arm.
+</p>
+
+<p>
+  "<em>Unusual!?</em>" you shout.  You jump up and quickly put the stool between you and him.  "You're not sticking me with that needle.  Yes, I've noticed something unusual, like <em>being kidnapped</em> and <em>getting knocked out by strangers!</em>  Who are you people?"
+</p>
+
+<p>
+  The man seems surprised.  "I'm just trying to help you.  Please, sit.  This will only take a second."
+</p>
+
+
+<div class="prompt">What do you do?</div>
+
+<choice goto="attack-the-doctor">Attack him and run.</choice>
+<choice goto="take-the-needle">Let him poke you.</choice>

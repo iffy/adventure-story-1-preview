@@ -1,0 +1,52 @@
+<p>
+  You call Tara and, using your best sore-throat-I-am-going-do-die voice, tell her that you won't be in today and brace for the worst.
+  <if any="charles-knows">
+    <true>
+      She's actually, suprisingly very nice.  "That's a first," you say after you hang up.
+    </true>
+    <else>
+      You get the worst.  In that maddening, passive-aggressive way of hers, she lets you know that the company needs more "team players," and that she's sure your "illness is genuine."
+    </else>
+  </if>
+</p>
+
+<p>
+  To clear your mind a bit, you decide to go for a quick run.  There's a drainage canal that runs along the back of your house (and on through the neighborhood).  You've measured a 4 mile loop starting from your back yard along the canal and then looping back through your neighborhood to your front door.  After a short stretch, you head out.  It's a very cold morning, which makes you cough a bit at first, but you soon warm up and have a great time and have mostly forgotten all about Mitchell and the Sandstone Tenants.
+</p>
+
+<if any="charles-knows">
+  <true>
+    <p>
+      As you walk up to your front door, you notice a note stuffed under the mat.  You pick it up.  In Sharpie across the back of a folded paper you read, "We hope you have a speedy recovery."
+    </p>
+
+    <p>
+      "That's weird," you think as you unfold the paper and turn it over.  "I haven't even told any..." your heart leaps into your throat.  <em>It's the missing page from the Sandstone report.</em>  You frantically turn around, looking up and down the street.  No one's outside.
+    </p>
+
+    <p>
+      You start to panic.  <thought>They know.  How do they know?  I need help!</thought>  You run inside to call the police.
+    </p>
+
+    <p>
+      Two steps in, you're grabbed from behind in a stranglehold.  You feel a sharp poke in your neck, and suddenly you start feeling pretty good about life.  Then, you pass out.
+    </p>
+
+  </true>
+
+
+  <else>
+    <p>
+      You go back inside and get some water.
+    </p>  
+  </else>
+</if>
+
+
+<div class="prompt">
+  What do you do?
+</div>
+
+<choice goto="wake-up-in-sandstone-cell" ifkey="charles-knows">Gracefully be dragged into the back of a waiting van.</choice>
+
+XXX

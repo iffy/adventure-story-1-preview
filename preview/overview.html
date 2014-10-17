@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"> -->
+    <title></title>
+
+    <!-- <link href="lib/ionic/css/ionic.css" rel="stylesheet"> -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/lodash.js"></script>
+    <script src="js/d3.v3.min.js" charset="utf-8"></script>
+    <script src="js/storydata.js"></script>
+    <script src="js/graphing.js"></script>
+
+    <style>
+    .link {
+      fill: none;
+      stroke: #ccc;
+      stroke-width: 1.5px;
+    }
+    .link.optional {
+      stroke-dasharray: 0,2 1;
+    }
+    .link.unavailable {
+      stroke-width: 0px;
+    }
+    .marker {
+      fill: #ccc;
+      stroke-width: 0;
+    }
+    .link,
+    text,
+    circle {
+      transition: opacity 0.5s, fill 0.5s, stroke 0.5s;
+    }
+    text {
+      font: 9px sans-serif;
+      pointer-events: none;
+      text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+    }
+    circle {
+      fill: #ccc;
+      stroke-width: 0px;
+    }
+    circle.end {
+      fill: rgba(231, 76, 60,1.0);
+      stroke-width: 7px;
+      stroke: rgba(231, 76, 60,1.0);
+      stroke-dasharray: 0,1 1;
+    }
+    circle.unfinished,
+    circle.incomplete {
+      fill: rgba(230, 126, 34,1.0);
+      stroke-width: 0px;
+    }
+    circle.has-keys {
+      stroke-width: 2px;
+      stroke: #9b59b6;
+    }
+    circle.incomplete {
+      
+    }
+
+
+    circle.selected {
+      fill: #f1c40f;
+    }
+    circle.in-path {
+      
+    }
+
+    circle.start {
+      fill: rgba(52, 152, 219,1.0);
+      stroke-width: 0px;
+    }
+
+    .link.unselected {
+      opacity: 0.1;
+    }
+    circle.unselected {
+      opacity: 0.1;
+    }
+    text.unselected {
+      opacity: 0;
+    }
+    </style>
+  </head>
+  <body ng-app="iadventure-graphing" ng-controller="MainCtrl as ctrl">
+    <input type="checkbox" ng-model="ctrl.show_labels"> Labels
+    <br/>
+    <story-graph data="ctrl.data.links" ref="ctrl.data.raw" width="1200" height="1200" labels="ctrl.show_labels"></story-graph>
+  </body>
+</html>

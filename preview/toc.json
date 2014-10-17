@@ -1,0 +1,2851 @@
+{
+  "toc": {
+    "continue-reading": {}, 
+    "finish-report": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Stay, and read the confidential report.", 
+          "slug": "read-report", 
+          "index": 0, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Lock the screen and leave.", 
+          "slug": "go-to-elevator", 
+          "index": 1, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "meet-with-tara": {
+      "keys": [
+        "you-know-tara-is-involved"
+      ], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Tell her the truth", 
+          "slug": "tell-tara-the-truth", 
+          "index": 0, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Feign ignorance", 
+          "slug": "feign-ignorance-to-tara", 
+          "index": 1, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "ask-mitchell": {}, 
+    "shock-and-awe-t-shirts": {
+      "keys": [], 
+      "ending": true, 
+      "incomplete": false, 
+      "choices": []
+    }, 
+    "pretend-to-finish": {}, 
+    "help-tara-by-waiting": {}, 
+    "feign-ignorance-to-tara": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Get some much-needed shut eye", 
+          "slug": "wake-up-in-sandstone-cell", 
+          "index": 0, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "surrender-to-mitchell": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": []
+    }, 
+    "tell-mitchell-the-truth": {
+      "keys": [
+        "mitchell-caught", 
+        "mitchell-trust", 
+        "saw-mitchell-caught"
+      ], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Lie about on floors and in the trunks of cars.", 
+          "slug": "wake-up-in-sandstone-cell", 
+          "index": 0, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "wake-up-in-sandstone-cell": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Talk to Mitchell.", 
+          "slug": "catch-up-with-mitchell", 
+          "index": 0, 
+          "ifkey": "mitchell-trust"
+        }, 
+        {
+          "ifnotkey": "mitchell-trust", 
+          "text": "Follow the line of people.", 
+          "slug": "follow-line-of-people", 
+          "index": 1, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Escape over the dune.", 
+          "slug": "escape-over-the-dune", 
+          "index": 2, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "wait-for-mitchell-outside": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Confront Mitchell", 
+          "slug": "confront-mitchell", 
+          "index": 0, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Sneak in after he leaves", 
+          "slug": "sneak-in-after-mitchell-leaves", 
+          "index": 1, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "go-back-to-office": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Follow Mitchell inside.", 
+          "slug": "follow-mitchell-inside", 
+          "index": 0, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Wait for Mitchell to come back out.", 
+          "slug": "wait-for-mitchell-outside", 
+          "index": 1, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "ask-charles": {}, 
+    "go-in-to-work": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Meet with Tara", 
+          "slug": "meet-with-tara", 
+          "index": 0, 
+          "ifkey": "charles-knows"
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Ignore the note and leave", 
+          "slug": "leave-work", 
+          "index": 1, 
+          "ifkey": "charles-knows"
+        }, 
+        {
+          "ifnotkey": "charles-knows", 
+          "text": "Ask Charles", 
+          "slug": "ask-charles", 
+          "index": 2, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": "charles-knows", 
+          "text": "Ask Carol", 
+          "slug": "ask-carol", 
+          "index": 3, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": "charles-knows", 
+          "text": "Ask Mitchell", 
+          "slug": "ask-mitchell", 
+          "index": 4, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "quit": {}, 
+    "wake-up-at-home": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Call in sick.", 
+          "slug": "call-in-sick", 
+          "index": 0, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Go to work.", 
+          "slug": "go-in-to-work", 
+          "index": 1, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "follow-mitchell-home": {}, 
+    "tell-tara-the-truth": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Help uncover Mitchell's gang", 
+          "slug": "help-tara", 
+          "index": 0, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "\"I'd rather not.\"", 
+          "slug": "no-thanks-tara", 
+          "index": 1, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "hide-behind-copier": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Go to bed and figure it out tomorrow.", 
+          "slug": "wake-up-at-home", 
+          "index": 0, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Call the police.", 
+          "slug": "call-police", 
+          "index": 1, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "start": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Stay and finish the report.", 
+          "slug": "finish-report", 
+          "index": 0, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Quit your job.", 
+          "slug": "quit", 
+          "index": 1, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Sneak out as soon as she's gone.", 
+          "slug": "pretend-to-finish", 
+          "index": 2, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "throw-glass": {
+      "keys": [], 
+      "ending": true, 
+      "incomplete": false, 
+      "choices": []
+    }, 
+    "escape-over-the-dune": {
+      "keys": [], 
+      "ending": true, 
+      "incomplete": false, 
+      "choices": []
+    }, 
+    "run-to-elevator-with-printout": {
+      "keys": [
+        "charles-knows"
+      ], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Try to sleep and hope for the best tomorrow.", 
+          "slug": "wake-up-at-home", 
+          "index": 0, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Call the police.", 
+          "slug": "call-police", 
+          "index": 1, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Go back to the office to look for the missing page.", 
+          "slug": "go-back-to-office", 
+          "index": 2, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "leave-after-reading": {}, 
+    "attack-the-doctor": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "All out offense", 
+          "slug": "throw-glass", 
+          "index": 0, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Run fast", 
+          "slug": "run-fast-through-lab", 
+          "index": 1, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "read-report": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Leave, quickly.", 
+          "slug": "leave-after-reading", 
+          "index": 0, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Continue reading the report.", 
+          "slug": "continue-reading", 
+          "index": 1, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Print the report and leave.", 
+          "slug": "print-report", 
+          "index": 2, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "bluff-mitchell": {
+      "keys": [
+        "mitchell-caught", 
+        "mitchell-not-trust"
+      ], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Hold very still and dream sweet dreams.", 
+          "slug": "wake-up-in-sandstone-cell", 
+          "index": 0, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "help-tara": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Follow Mitchell home at lunch", 
+          "slug": "follow-mitchell-home", 
+          "index": 0, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Wait", 
+          "slug": "help-tara-by-waiting", 
+          "index": 1, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Use a little shock and awe", 
+          "slug": "shock-and-awe-t-shirts", 
+          "index": 2, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "catch-up-with-mitchell": {
+      "keys": [
+        "mitchell-plan"
+      ], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Attack him and run.", 
+          "slug": "attack-the-doctor", 
+          "index": 0, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Let him poke you.", 
+          "slug": "take-the-needle", 
+          "index": 1, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "take-the-needle": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": []
+    }, 
+    "call-in-sick": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": true, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Gracefully be dragged into the back of a waiting van.", 
+          "slug": "wake-up-in-sandstone-cell", 
+          "index": 0, 
+          "ifkey": "charles-knows"
+        }
+      ]
+    }, 
+    "no-thanks-tara": {}, 
+    "run-fast-through-lab": {
+      "keys": [], 
+      "ending": true, 
+      "incomplete": false, 
+      "choices": []
+    }, 
+    "follow-mitchell-inside": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Bluff and try to escape.", 
+          "slug": "bluff-mitchell", 
+          "index": 0, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Tell Mitchell the truth.", 
+          "slug": "tell-mitchell-the-truth", 
+          "index": 1, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "go-to-elevator": {}, 
+    "run-away-from-mitchell": {
+      "keys": [], 
+      "ending": true, 
+      "incomplete": false, 
+      "choices": []
+    }, 
+    "leave-work": {}, 
+    "call-police": {}, 
+    "sneak-in-after-mitchell-leaves": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Get some well deserved rest on the tile.", 
+          "slug": "wake-up-in-sandstone-cell", 
+          "index": 0, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "confront-mitchell": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Surrender", 
+          "slug": "surrender-to-mitchell", 
+          "index": 0, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Run for the strip mall", 
+          "slug": "run-away-from-mitchell", 
+          "index": 1, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "follow-line-of-people": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Attack him and run.", 
+          "slug": "attack-the-doctor", 
+          "index": 0, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Let him poke you.", 
+          "slug": "take-the-needle", 
+          "index": 1, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "print-report": {
+      "keys": [], 
+      "ending": false, 
+      "incomplete": false, 
+      "choices": [
+        {
+          "ifnotkey": null, 
+          "text": "Hide behind the copier.", 
+          "slug": "hide-behind-copier", 
+          "index": 0, 
+          "ifkey": null
+        }, 
+        {
+          "ifnotkey": null, 
+          "text": "Run to the elevator.", 
+          "slug": "run-to-elevator-with-printout", 
+          "index": 1, 
+          "ifkey": null
+        }
+      ]
+    }, 
+    "ask-carol": {}
+  }, 
+  "paths": [
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": false, 
+        "slug": "leave-after-reading", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": false, 
+        "slug": "continue-reading", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "hide-behind-copier", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-at-home", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "go-in-to-work", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": false, 
+        "slug": "ask-charles", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "hide-behind-copier", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-at-home", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "go-in-to-work", 
+        "ending": false
+      }, 
+      {
+        "index": 3, 
+        "finished": false, 
+        "slug": "ask-carol", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "hide-behind-copier", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-at-home", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "go-in-to-work", 
+        "ending": false
+      }, 
+      {
+        "index": 4, 
+        "finished": false, 
+        "slug": "ask-mitchell", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "hide-behind-copier", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": false, 
+        "slug": "call-police", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-at-home", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "call-in-sick", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "follow-line-of-people", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "attack-the-doctor", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "throw-glass", 
+        "ending": true
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-at-home", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "call-in-sick", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "follow-line-of-people", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "attack-the-doctor", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-fast-through-lab", 
+        "ending": true
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-at-home", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "call-in-sick", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "follow-line-of-people", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": false, 
+        "slug": "take-the-needle", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-at-home", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "call-in-sick", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "escape-over-the-dune", 
+        "ending": true
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-at-home", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "go-in-to-work", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "meet-with-tara", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "tell-tara-the-truth", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "help-tara", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": false, 
+        "slug": "follow-mitchell-home", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-at-home", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "go-in-to-work", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "meet-with-tara", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "tell-tara-the-truth", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "help-tara", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": false, 
+        "slug": "help-tara-by-waiting", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-at-home", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "go-in-to-work", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "meet-with-tara", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "tell-tara-the-truth", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "help-tara", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "shock-and-awe-t-shirts", 
+        "ending": true
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-at-home", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "go-in-to-work", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "meet-with-tara", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "tell-tara-the-truth", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": false, 
+        "slug": "no-thanks-tara", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-at-home", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "go-in-to-work", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "meet-with-tara", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "feign-ignorance-to-tara", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "follow-line-of-people", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "attack-the-doctor", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "throw-glass", 
+        "ending": true
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-at-home", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "go-in-to-work", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "meet-with-tara", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "feign-ignorance-to-tara", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "follow-line-of-people", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "attack-the-doctor", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-fast-through-lab", 
+        "ending": true
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-at-home", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "go-in-to-work", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "meet-with-tara", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "feign-ignorance-to-tara", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "follow-line-of-people", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": false, 
+        "slug": "take-the-needle", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-at-home", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "go-in-to-work", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "meet-with-tara", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "feign-ignorance-to-tara", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "escape-over-the-dune", 
+        "ending": true
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-at-home", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "go-in-to-work", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": false, 
+        "slug": "leave-work", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-at-home", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "go-in-to-work", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": false, 
+        "slug": "ask-charles", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-at-home", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "go-in-to-work", 
+        "ending": false
+      }, 
+      {
+        "index": 3, 
+        "finished": false, 
+        "slug": "ask-carol", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-at-home", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "go-in-to-work", 
+        "ending": false
+      }, 
+      {
+        "index": 4, 
+        "finished": false, 
+        "slug": "ask-mitchell", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": false, 
+        "slug": "call-police", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "go-back-to-office", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "follow-mitchell-inside", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "bluff-mitchell", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "follow-line-of-people", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "attack-the-doctor", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "throw-glass", 
+        "ending": true
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "go-back-to-office", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "follow-mitchell-inside", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "bluff-mitchell", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "follow-line-of-people", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "attack-the-doctor", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-fast-through-lab", 
+        "ending": true
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "go-back-to-office", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "follow-mitchell-inside", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "bluff-mitchell", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "follow-line-of-people", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": false, 
+        "slug": "take-the-needle", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "go-back-to-office", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "follow-mitchell-inside", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "bluff-mitchell", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "escape-over-the-dune", 
+        "ending": true
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "go-back-to-office", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "follow-mitchell-inside", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "tell-mitchell-the-truth", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "catch-up-with-mitchell", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "attack-the-doctor", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "throw-glass", 
+        "ending": true
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "go-back-to-office", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "follow-mitchell-inside", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "tell-mitchell-the-truth", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "catch-up-with-mitchell", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "attack-the-doctor", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-fast-through-lab", 
+        "ending": true
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "go-back-to-office", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "follow-mitchell-inside", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "tell-mitchell-the-truth", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "catch-up-with-mitchell", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": false, 
+        "slug": "take-the-needle", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "go-back-to-office", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "follow-mitchell-inside", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "tell-mitchell-the-truth", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "follow-line-of-people", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "attack-the-doctor", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "throw-glass", 
+        "ending": true
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "go-back-to-office", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "follow-mitchell-inside", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "tell-mitchell-the-truth", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "follow-line-of-people", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "attack-the-doctor", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-fast-through-lab", 
+        "ending": true
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "go-back-to-office", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "follow-mitchell-inside", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "tell-mitchell-the-truth", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "follow-line-of-people", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": false, 
+        "slug": "take-the-needle", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "go-back-to-office", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "follow-mitchell-inside", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "tell-mitchell-the-truth", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "escape-over-the-dune", 
+        "ending": true
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "go-back-to-office", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "wait-for-mitchell-outside", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "confront-mitchell", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": false, 
+        "slug": "surrender-to-mitchell", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "go-back-to-office", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "wait-for-mitchell-outside", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "confront-mitchell", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-away-from-mitchell", 
+        "ending": true
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "go-back-to-office", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "wait-for-mitchell-outside", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "sneak-in-after-mitchell-leaves", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "follow-line-of-people", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "attack-the-doctor", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "throw-glass", 
+        "ending": true
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "go-back-to-office", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "wait-for-mitchell-outside", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "sneak-in-after-mitchell-leaves", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "follow-line-of-people", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "attack-the-doctor", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-fast-through-lab", 
+        "ending": true
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "go-back-to-office", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "wait-for-mitchell-outside", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "sneak-in-after-mitchell-leaves", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "follow-line-of-people", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": false, 
+        "slug": "take-the-needle", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "read-report", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "print-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "run-to-elevator-with-printout", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "go-back-to-office", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "wait-for-mitchell-outside", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": true, 
+        "slug": "sneak-in-after-mitchell-leaves", 
+        "ending": false
+      }, 
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "wake-up-in-sandstone-cell", 
+        "ending": false
+      }, 
+      {
+        "index": 2, 
+        "finished": true, 
+        "slug": "escape-over-the-dune", 
+        "ending": true
+      }
+    ], 
+    [
+      {
+        "index": 0, 
+        "finished": true, 
+        "slug": "finish-report", 
+        "ending": false
+      }, 
+      {
+        "index": 1, 
+        "finished": false, 
+        "slug": "go-to-elevator", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 1, 
+        "finished": false, 
+        "slug": "quit", 
+        "ending": false
+      }
+    ], 
+    [
+      {
+        "index": 2, 
+        "finished": false, 
+        "slug": "pretend-to-finish", 
+        "ending": false
+      }
+    ]
+  ]
+}

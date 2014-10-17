@@ -1,0 +1,98 @@
+<p>
+  You slowly wake up and struggle to open your eyes.
+</p>
+
+<p>
+  <thought>What happened?</thought>
+</p>
+
+<p>
+  Your eyelids feel like heavy weights and refuse to open.  You're laying down on something soft.  It's slightly chilly.  Through your eyelids you can sense light to your right&mdash;a soft, blueish light.  You slowly realize that you're barefoot.
+</p>
+
+<p>
+  With what seems like enormous effort, you finally force your eyes open.  Your vision is blurry.  The blueish light is coming from a square over... oh, it's a window.  Your eyes begin to focus.  It looks like the time of day just before the sun comes up.  In a glance, you see that you're in someone's bedroom, maybe.  There's an office chair, a desk, a toilet and some bookshelves.  There are no lights that you can see.  On two walls hang tacky dollar-store landscape paintings.  And there's a door.
+</p>
+
+<p>
+  <thought>Where am I?</thought>
+</p>
+
+<p>
+  You swing your legs out of bed.  Well, you try to swing them, but it hurts.  Every muscle aches.  Every movement is halted.  You notice a thing plastic bracelet on your left hand&mdash;the kind you get in hospitals.  You heave your hand up and see that there's a small code on the bracelet, but no words.  Finally, you roll onto your side, let your legs fall off the bed and simultaneously push yourself up into a sitting position.
+</p>
+
+<p>
+  The moment you get upright, a massive headache pounds into place behind your eyes.  You instinctively snap your eyes shut and grab your head.  The pain abates somewhat and it seems like you might be able to stand up in a minute or two.  As you wait, eyes closed, you start to remember what happened, which makes you panic.
+</p>
+
+<if any="saw-mitchell-caught">
+  <true>
+    <p>
+      <thought>Mitchell!  Where's Mitchell?</thought>  They knocked him out, too.  You saw it.  <thought>I hope he's okay.</thought>
+    </p>
+  </true>
+</if>
+
+<p>
+  You open your eyes and notice you're wearing a grey uniform of some kind&mdash;long pants and a long, drapey shirt.  Like a prisoner.
+</p>
+
+<p>
+  <thought>I've got to get out of here.  <if any="saw-mitchell-caught"><true>And I've got to find Mitchell.</true></if></thought>
+</p>
+
+<p>
+  You stumble to your feet, then lumber over to the door.  There's no doorknob.  You lurch yourself over to the window and rest against the sill.  Only then do you really look out and see, about twenty feet away a massive, wavy sandstone wall.  <thought>Sandstone.</thought> It rises perhaps two hundred feet above the window and curves around on the left and right so that all you can see is a sandstone wall and fine sand on the ground.
+</p>
+
+<p>
+  <thought>I'm trapped.</thought>
+</p>
+
+<p>
+  Desperately, you scan for a handle or lever to open the window.  Finding none, you spin around and look for something you can use to break it.  Adrenaline strengthens you against your pain.  You rush to the bookshelf, grab the largest book and hurl it at the window.  It smacks loudly and falls to the ground.  You pick it up and throw it again.  No effect.  You grab the chair, but it doesn't budge&mdash;it's bolted to the floor.  Same with the desk, bed and bookshelf.  You pick the book up and repeatedly smash it against the window.  The window remains intact.  You slump down on the bed, defeated.
+</p>
+
+<hr/>
+
+<p>
+  The morning light slowly chases the blueness away, leaving a sandstone-colored orangeness in its place.  You're not sure how much time has passed, when suddenly, you hear an electric buzz and the door opens.  You jump to your feet and duck behind the open door, worried about who might come through.  But no one does.
+</p>
+
+<p>
+  Suddenly, you hear a garbled voice (could be man or woman) blaring over a loudspeaker: "All tenants report to inoculation."
+</p>
+
+<p>
+  You finally edge around the door and look out.  About a hundred feet away is another tall, curved, sandstone wall.  Leading to the wall is a vast expanse of sand that rises into a small dune about thirty feet away so that you can't see the base of the huge wall.  To your right, you see the end of another wall&mdash;this must be the edge of the one you saw out the window.  To your left, you see nothing but sand and the tall sandstone wall.  It's definitely morning, but everything is draped in shadow.
+</p>
+
+<p>
+  You pause a moment, listening for any sounds of people or other danger.  It's completely silent.  "There's no use staying inside," you think as you finally step out into the sand.  <thought>That's cold sand!</thought>
+</p>
+
+<p>
+  You catch a glimpse of the top of the far wall, which is lit by a band of sunlight just below a beautifully blue sky.  But your attention is quickly drawn to movement at your left.  There's a line of people, dressed in matching grey clothes, walking slowly away from you.  To your left, and theirs, is a long cement building with perhaps thirty or more doorways in it.  You wonder if you ought to follow the line of people or try to run away over the sand dune.
+</p>
+<if any="mitchell-caught">
+  <true>
+    <p>
+      As you consider your options, you notice that one of the people in line looks familiar.  "Is that Mitchell?" you wonder.  His walk gives him away&mdash;it is Mitchell!
+      <if any="mitchell-not-trust">
+        <true>
+          <thought>Why is he here?  I thought he was one of them.</thought>
+        </true>
+      </fi>
+    </p>
+  </true>
+</if>
+
+<div class="prompt">
+  What do you do?
+</div>
+
+<choice goto="catch-up-with-mitchell" ifkey="mitchell-trust">Talk to Mitchell.</choice>
+<choice goto="follow-line-of-people" ifnotkey="mitchell-trust">Follow the line of people.</choice>
+<choice goto="escape-over-the-dune">Escape over the dune.</choice>
+
