@@ -143,7 +143,6 @@ angular.module('iadventure', ['ionic', 'storydata'])
   // Jump to the given spot in a storyline
   //
   state.jumpToCode = function(code) {
-    console.log('jumping to code', code);
     state.clear();
     for (var i = 0; i < code.length; i++) {
       var num = parseInt(code[i]);
@@ -158,6 +157,9 @@ angular.module('iadventure', ['ionic', 'storydata'])
       if ($stateParams.code !== state.current_code && $stateParams.code !== null) {
         state.jumpToCode($stateParams.code);
       }
+    }
+    if (ga !== undefined) {
+      ga('send', 'event', 'statechange', $stateParams.slug);
     }
     // if ($state.current.name === 'page') {
     //   if ($stateParams.slug === 'start') {
@@ -317,9 +319,13 @@ angular.module('iadventure', ['ionic', 'storydata'])
   }
 })
 
-.controller('MainCtrl', function(StoryState, SVGMark) {
+.controller('MainCtrl', function(StoryState, SVGMark, $window) {
   var ctrl = this;
   ctrl.state = StoryState;
   ctrl.svgmark = SVGMark;
+  ctrl.debug = false;
+  if ( /[\d\.\:]+/.test($window.location.hostname) ) {
+    ctrl.debug = true;
+  }
   return ctrl;
 })

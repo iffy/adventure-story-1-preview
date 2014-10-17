@@ -21,6 +21,8 @@
     <!-- your app's js -->
     <script src="js/storydata.js"></script>
     <script src="js/app.js"></script>
+
+    <script src="js/tracking.js"></script>
   </head>
   <body ng-app="iadventure" ng-controller="MainCtrl as ctrl">
 
@@ -43,7 +45,7 @@
       </div>
     </div>
 
-    <div class="debug" ng-cloak>
+    <div class="debug" ng-cloak ng-if="ctrl.debug">
       <input type="text" ng-model="ctrl.state.current_code" ng-change="ctrl.state.jumpToCode(ctrl.state.current_code)">
       <div class="slug" ng-repeat="key in ctrl.state.keys">{{ key }}</div>
     </div>
