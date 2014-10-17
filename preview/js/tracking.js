@@ -8,6 +8,7 @@ if (! /^[\d\.\:]+$/.test(window.location.hostname)) {
   ga('create', 'UA-55598335-2', 'auto');
   ga('send', 'pageview');
 } else {
+  console.log('local');
   ga = function() {
     console.log('ga', arguments);
   }
