@@ -324,7 +324,7 @@ angular.module('iadventure', ['ionic', 'storydata'])
   ctrl.state = StoryState;
   ctrl.svgmark = SVGMark;
   ctrl.debug = false;
-  if ( /[\d\.\:]+/.test($window.location.hostname) ) {
+  if ( /^[\d\.\:]+$/.test($window.location.hostname) ) {
     ctrl.debug = true;
   }
   return ctrl;
